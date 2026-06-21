@@ -662,7 +662,10 @@ async function startCodexOAuth(){
         <div class="onboarding-oauth-icon">📋</div>
         <div style="flex:1">
           <strong>${t('oauth_codex_step1')}</strong>
-          <p><a href="${esc(verification_uri)}" target="_blank" rel="noopener" style="color:var(--accent);word-break:break-all">${esc(verification_uri)}</a></p>
+          <p style="margin-top:8px">
+            <a href="${esc(verification_uri)}" target="_blank" rel="noopener" class="sm-btn" style="display:inline-block;text-decoration:none;font-weight:600">Open sign-in page ↗</a>
+          </p>
+          <p style="margin-top:6px;color:var(--muted);font-size:13px;word-break:break-all">${esc(verification_uri)}</p>
           <p style="margin-top:8px"><strong>${t('oauth_codex_step2')}</strong></p>
           <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:4px">
             <code style="display:inline-block;font-size:18px;letter-spacing:0.1em;background:rgba(255,255,255,.08);padding:6px 14px;border-radius:8px;user-select:all">${esc(user_code)}</code>
